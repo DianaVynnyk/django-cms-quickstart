@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+  namespace: default
+  labels:
+    name: django-cms-quickstart-web
+spec:
+  containers:
+  - name: django-cms-quickstart-web
+    image: dianavynnyk/django-cms-quickstart-web:latest
+    ports:
+    - containerPort: 8000
